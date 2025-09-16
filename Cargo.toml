@@ -1,6 +1,6 @@
 [package]
 name = "qrt"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "Rust CLI that prints QR codes to your terminal."
 license = "MIT"
@@ -13,7 +13,7 @@ categories = ["command-line-utilities"]
 [dependencies]
 clap = { version = "4.0", features = ["derive"] }
 qrcode = "0.12"
-image = "0.24"
+image = { version = "0.24", features = ["png"] }
 
 [[bin]]
 name = "qrt"

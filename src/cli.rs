@@ -16,6 +16,13 @@ pub struct Args {
 
     #[arg(long, short, default_value = "medium", help = "Size of the QR code")]
     pub size: QrSize,
+
+    #[arg(
+        long,
+        short = 'S',
+        help = "Save QR code as PNG image. Use --save for 'output.png' or --save filename"
+    )]
+    pub save: Option<Option<String>>,
 }
 
 impl QrSize {
