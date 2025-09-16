@@ -10,6 +10,7 @@ pub enum QrSize {
 #[derive(Parser, Debug)]
 #[command(name = "qrt")]
 #[command(about = "Generate or decode QR codes")]
+#[command(version)]
 pub struct Args {
     #[arg(help = "Text to encode OR image path to decode")]
     pub input: String,
