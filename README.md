@@ -1,4 +1,4 @@
-# QRS
+# QRT
 
 A simple command-line tool to generate QR codes in the terminal.
 
@@ -7,7 +7,7 @@ A simple command-line tool to generate QR codes in the terminal.
 ## Installation / 安装
 
 ```bash
-cargo install qrs
+cargo install qrt
 ```
 
 ## Usage / 使用方法
@@ -18,13 +18,13 @@ Generate a QR code from text or URL:
 
 ```bash
 # Basic usage / 基本用法
-qrs "Hello, World!"
-qrs "https://example.com"
+qrt "Hello, World!"
+qrt "https://example.com"
 
 # With size options / 使用尺寸选项
-qrs -s small "text"
-qrs --size medium "text"
-qrs --size large "text"
+qrt -s small "text"
+qrt --size medium "text"
+qrt --size large "text"
 ```
 
 ### Size Options / 尺寸选项
@@ -37,4 +37,4 @@ qrs --size large "text"
 
 ```bash
 # Generate QR code for a URL / 为URL生成二维码
-qrs "https://github.com"
+qrt "https://github.com"

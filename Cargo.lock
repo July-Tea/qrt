@@ -409,7 +409,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "qrs"
+name = "qrt"
 version = "0.1.0"
 dependencies = [
  "clap",

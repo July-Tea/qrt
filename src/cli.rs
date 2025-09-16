@@ -8,7 +8,7 @@ pub enum QrSize {
 }
 
 #[derive(Parser, Debug)]
-#[command(name = "qrs")]
+#[command(name = "qrt")]
 #[command(about = "Generate QR codes in terminal")]
 pub struct Args {
     #[arg(help = "URL or text to encode")]
