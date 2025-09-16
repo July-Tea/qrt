@@ -9,9 +9,9 @@ pub enum QrSize {
 
 #[derive(Parser, Debug)]
 #[command(name = "qrt")]
-#[command(about = "Generate QR codes in terminal")]
+#[command(about = "Generate or decode QR codes")]
 pub struct Args {
-    #[arg(help = "URL or text to encode")]
+    #[arg(help = "Text to encode OR image path to decode")]
     pub input: String,
 
     #[arg(long, short, default_value = "medium", help = "Size of the QR code")]
@@ -23,6 +23,9 @@ pub struct Args {
         help = "Save QR code as PNG image. Use --save for 'output.png' or --save filename"
     )]
     pub save: Option<Option<String>>,
+
+    #[arg(long, short, help = "Decode QR code from image", conflicts_with_all = ["size", "save"])]
+    pub decode: bool,
 }
 
 impl QrSize {

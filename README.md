@@ -1,8 +1,8 @@
 # QRT
 
-A simple command-line tool to generate QR codes in terminal and save as PNG images.
+A simple command-line tool to generate and decode QR codes in terminal with PNG support.
 
-一个在终端中生成二维码并可保存为PNG图片的简单命令行工具。
+一个在终端中生成和解码二维码的简单命令行工具。
 
 ## Installation / 安装
 
@@ -12,9 +12,7 @@ cargo install qrt
 
 ## Usage / 使用方法
 
-Generate a QR code from text or URL:
-
-从文本或URL生成二维码：
+### Generate QR Codes / 生成二维码
 
 ```bash
 # Basic usage / 基本用法
@@ -27,8 +25,16 @@ qrt --size medium "text"
 qrt --size large "text"
 
 # Save as PNG image / 保存为PNG图片
-qrt "Hello" --save           # 保存为 output.png
-qrt "Hello" --save my-qr     # 保存为 my-qr.png
+qrt "Hello" --save           # saves as output.png / 保存为 output.png
+qrt "Hello" --save my-qr     # saves as my-qr.png / 保存为 my-qr.png
+```
+
+### Decode QR Codes / 解码二维码
+
+```bash
+# Decode QR code from image / 从图片解码二维码
+qrt --decode qrcode.png
+qrt -d image.jpg
 ```
 
 ### Size Options / 尺寸选项
@@ -56,4 +62,7 @@ qrt "My QR Code" --save my-qr-code
 
 # Large QR code saved / 大尺寸二维码保存
 qrt "Large QR" --size large --save
+
+# Decode existing QR code / 解码现有二维码
+qrt --decode qrcode.png
 ```
