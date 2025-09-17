@@ -21,7 +21,6 @@ qrt "https://example.com"
 
 # With size options / 使用尺寸选项
 qrt -s small "text"
-qrt --size medium "text"
 qrt --size large "text"
 
 # Save as PNG image / 保存为PNG图片
@@ -39,9 +38,8 @@ qrt -d image.jpg
 
 ### Size Options / 尺寸选项
 
-- `small` - Small QR code / 小尺寸二维码
-- `medium` - Medium QR code (default) / 中等尺寸二维码（默认）
-- `large` - Large QR code / 大尺寸二维码
+- `small` - Compact square QR code (default) / 小尺寸二维码（默认）
+- `large` - Traditional QR code / 大尺寸二维码
 
 ### Save Options / 保存选项
 
