@@ -1,6 +1,6 @@
 [package]
 name = "qrt"
-version = "0.1.4"
+version = "0.2.0"
 edition = "2024"
 description = "Rust CLI that prints QR codes to your terminal."
 license = "MIT"
@@ -19,7 +19,3 @@ rqrr = "0.7"
 [[bin]]
 name = "qrt"
 path = "src/main.rs"
-
-
-
-  

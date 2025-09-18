@@ -1,4 +1,4 @@
-# QRT
+# QRT (QR Tools)
 
 A simple command-line tool to generate and decode QR codes in terminal with PNG support.
 
